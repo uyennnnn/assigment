@@ -1,0 +1,130 @@
+.logo{
+    width: 170px;
+    height: 30px;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.title_logo{
+    width: 321px;
+    height: 40px;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 15px;
+}
+.title_text{
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+.photo{
+    width:1116px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.largeTitle{
+    text-transform: uppercase; 
+    font-size: 25px;
+    font-weight: 400;
+    padding-top :1000px;
+}
+
+.smallTitle{
+
+/* Title */
+
+font-family: 'Basis Grotesque Pro';
+font-style: normal;
+font-weight: 450;
+font-size: 20px;
+line-height: 130%;
+/* or 31px */
+
+
+/* Secondary */
+
+color: #080B13;
+}
+
+.SortBy{
+    /* Sort by */
+
+
+
+height: 31px;
+
+/* Title */
+
+font-family: 'Basis Grotesque Pro';
+font-style: normal;
+font-weight: 450;
+font-size: 20px;
+line-height: 130%;
+/* or 31px */
+
+
+/* Secondary */
+
+color: black;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.dropdownSort{
+    width: 48px;
+height: 31px;
+
+/* Title */
+
+font-family: 'Basis Grotesque Pro';
+font-style: normal;
+font-weight: 450;
+font-size: 20px;
+line-height: 130%;
+/* or 31px */
+
+
+/* Light grey */
+
+color: #707070;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.dropdown-toggle::after{
+    color:black;
+}
