@@ -1,16 +1,53 @@
-.logo{
-    width: 170px;
-    height: 30px;
+nav{
+    display: flex;
+}
 
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.navlogo{
+    padding-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.biglogo{
+    font-size: 80px;
+    font-weight: bold;
 }
 
 
+
+.navright{
+    padding-right: 0px;
+}
+
+.catalog{
+    display: none;
+}
+
+.ul{
+    float: right;
+}
+nav ul a{
+    padding: 7px 13px;
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+a:hover{
+    background: #c3c4c5;
+    transition: .5s;
+}
+
+.sale{
+    margin-right: 309px;
+}
 
 .navbar-collapse{
     flex-grow: 0 !important;
@@ -21,7 +58,7 @@
 }
 .title_logo{
     width: 321px;
-    height: 40px;
+    height: 48px;
 
 
 /* Inside auto layout */
@@ -37,13 +74,7 @@
     font-weight: 500;
     font-size: 15px;
 }
-.photo{
-    width:1116px;
-    height: 450px;
-    left: 0px;
-    top: 0px;
 
-}
 
 .largeTitle{
     text-transform: uppercase; 
@@ -127,4 +158,100 @@ flex-grow: 0;
 
 .dropdown-toggle::after{
     color:black;
+}
+
+.bottom_product{
+    display:flex;
+    margin-top: 25px;
+}
+
+.color{
+    background-color: rgb(245, 243, 243);
+    color:darkgray;
+    border: 1px solid black;
+    width: 100px; 
+    height: 28px; 
+    text-align:center;
+}
+
+.infor{
+    display: inline-flex;
+}
+
+/* Mobile: width <740px */
+@media  screen and (max-width: 46.1875em){
+    .ul{
+        float: none;
+    }
+    .catalog a{
+        padding-left: 0px;
+        padding-right: 82px;
+    }
+    .profile a{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    nav{
+        justify-content: center;
+    }
+    .navlogo{
+        display: none;
+    }
+    .collection{
+        display: none;
+    }
+    .customizer{
+        display: none;
+    }
+    .sale{
+        display: none;
+    }
+    .catalog{
+        padding-left: 0px;
+        display: flex;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    .navleft{
+        padding-left: 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .price
+    {
+        text-align: center;
+    }
+    .card-title{
+        text-align: center;
+    }
+    .mainColor{
+        text-align: center;
+    }
+    .bottom_product{
+        justify-content: center;
+    }
+    .m_color{
+        display: flex;
+        justify-content: center;
+    }
+    .addAndInfor{
+        display:flex;
+        flex-direction: column;
+    }
+    .addAndInfor .addtocard{
+        display:flex;
+        justify-content: center;
+        order: 2;
+    }
+    .addcard{
+        width:200%;
+        background-color: black;
+    }
+   
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+    
 }
