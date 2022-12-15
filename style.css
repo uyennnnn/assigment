@@ -48,8 +48,14 @@ nav ul li{
 a:hover{
     background: #c3c4c5;
     transition: .3s;
+    color:black
   
 }
+
+.navlogo a:hover{
+    text-decoration: none;
+    color:black;
+  }
 
 
 .center{
