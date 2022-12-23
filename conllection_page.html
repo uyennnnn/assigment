@@ -20,16 +20,24 @@
         color:black;
 
       }
-
-      
-      
+      nav.sticky{
+        position: fixed ;
+        top : 0px;
+        left: 0px;
+        padding: 0px 132px;
+        /* margin-bottom: 30px; */
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     </style>
 </head>
 <body>
     <div class="container">
-      <nav style="display: flex;">
+      <nav style="display: flex; z-index: 999;" id="navbar">
         <span  class="navlogo"> <a style="color:black" href="index.html">L&nbsp; O&nbsp; G&nbsp; O</a></span>
-        <div class="ul" style="display: flex ;">
+        <div class="ul" id="menu"  style="display: flex ;">
         <ul class="navleft">  
           <li class="collection" ><a class="active" href="conllection_page.html" > COLLECTION </a></li>
           <li class="customizer"><a href="product_page.html" > CUSTOMIZER </a></li>
@@ -612,6 +620,19 @@
     </div>
     </footer>
     
+      <script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+    window.onscroll =function(){
+      if(window.pageYOffset > menu.offsetTop ){
+        navbar.classList.add("sticky");
+      }
+      else{
+        navbar.classList.remove("sticky");
+      }
+    }
+
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>

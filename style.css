@@ -4,7 +4,8 @@ nav{
 }
 
 .navlogo{
-    padding-top: 15px;
+    display: flex;
+    align-items: center;
     font-size: 35px;
     font-weight: bold;
     width: 35%;
@@ -52,11 +53,27 @@ a:hover{
   
 }
 
+.indexpd a:hover{
+    background: none;
+}
+
 .navlogo a:hover{
     text-decoration: none;
     color:black;
+
   }
 
+nav.sticky{
+    position: fixed ;
+    top : 0px;
+    left: 0px;
+    padding: 0px 54px;
+    /* margin-bottom: 30px; */
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .center{
     width : 1116px;
@@ -84,6 +101,8 @@ a:hover{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
 .point{
     margin-top: 25px;
 }
@@ -149,8 +168,32 @@ a:hover{
 .right_input{
     display: block;
 }
+
+.saleprice{
+    display:flex;
+    justify-content: center;
+}
+
+.old-price{
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #707070;
+    position: relative;
+    top: 4px;
+}
+
+.off{
+    color: green;
+    font-weight: 550;
+}
 /* Mobile: width <740px */
 @media  screen and (max-width: 61em){
+    *{
+        padding:0px;
+    }
+
     .ul{
         width:100%
     }
