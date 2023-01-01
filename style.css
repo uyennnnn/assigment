@@ -1,3 +1,6 @@
+body{
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
 nav{
     display: flex;
     width: 100%;
@@ -15,7 +18,9 @@ nav{
     font-weight: bold;
 }
 
-
+.mb-3{
+    border: none;
+}
 
 .navright{
     padding-right: 0px;
@@ -182,6 +187,15 @@ nav.sticky{
     color: #707070;
     position: relative;
     top: 4px;
+}
+#sortby{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100% !important;
+    left:50% !important ;
 }
 
 .off{
